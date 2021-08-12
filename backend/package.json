@@ -5,10 +5,16 @@
   "main": "server.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production nodemon server",
-    "dev": "cross-env NODE_ENV=development nodemon server"
+    "dev": "cross-env NODE_ENV=development nodemon server",
+    "heroku-prebuild": "npm install -f",
+    "heroku-postbuild": "npm run prod"
   },
   "author": "Klylylydeee",
   "license": "MIT",
+  "engines": {
+    "node": "14.17.1",
+    "yarn": "1.22.10"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
