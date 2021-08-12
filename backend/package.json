@@ -6,7 +6,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production nodemon server",
     "dev": "cross-env NODE_ENV=development nodemon server",
-    "heroku-prebuild": "yarn add -f",
+    "heroku-prebuild": "yarn install",
     "heroku-postbuild": "yarn run start"
   },
   "author": "Klylylydeee",
