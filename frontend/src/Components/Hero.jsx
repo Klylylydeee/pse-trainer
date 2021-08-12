@@ -1,7 +1,6 @@
 import React, { useEffect, useContext } from "react";
 import background from '../Assets/background1.jpg'
 import {AuthAPI} from '../AuthAPI';
-import tablet from '../Assets/tablet.svg'
 import { useMediaQuery } from 'react-responsive'
 
 const Hero = () => {

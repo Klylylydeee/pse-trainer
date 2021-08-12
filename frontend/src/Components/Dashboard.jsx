@@ -2,10 +2,8 @@ import React, { useContext, useEffect } from "react";
 import { AuthAPI } from "../AuthAPI";
 import Cookies from "js-cookie";
 import { useSelector, useDispatch } from "react-redux";
-import { userLogout, transaction } from "../State/Authorization/Auth";
-import { updateStock } from "../State/Stocks/Stock";
+import { userLogout } from "../State/Authorization/Auth";
 import { removeStock } from "../State/Stocks/Stock";
-import { axiosAPI } from "../services/axios";
 import StocksModal from "./StocksData/StocksModal";
 
 const Dashboard = () => {
@@ -19,7 +17,7 @@ const Dashboard = () => {
     Cookies.remove("user");
   };
 
-  const { id, wallet, username } = useSelector((state) => state.user);
+  const { wallet, username } = useSelector((state) => state.user);
   const { stocks } = useSelector((state) => state.stock);
   
   let stocksExist = stocks.length >= 1 ? true : false;

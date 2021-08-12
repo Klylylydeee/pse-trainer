@@ -10,7 +10,6 @@ import StocksData from './Components/StocksData';
 import { SemipolarLoading } from 'react-loadingg';
 import { SlidingPanelContainer } from './Components/SidePanel';
 import Hero from './Components/Hero';
-import Logo from './Assets/AR Book.svg'
 import './App.scss';
 
 const App = () => {

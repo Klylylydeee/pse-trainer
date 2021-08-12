@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useState, useContext } from "react";
 import Modal from 'react-modal';
 import { AuthAPI } from "../../AuthAPI";
 import { updateStock } from "../../State/Stocks/Stock";

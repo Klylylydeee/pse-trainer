@@ -1,12 +1,11 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { axiosAPI } from "../../services/axios";
 import env from "react-dotenv";
 import { AuthAPI } from "../../AuthAPI";
 import jwt from "jsonwebtoken";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { userLogin } from "../../State/Authorization/Auth";
 import { updateStock } from "../../State/Stocks/Stock";
-import { updateSpinner } from "../../State/Spinner/Spinner";
 import Cookies from "js-cookie";
 
 const SignIn = () => {
